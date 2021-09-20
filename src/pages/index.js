@@ -10,7 +10,7 @@ const IndexPage = () => {
       <h1>The Game Well Played</h1>
       <h2>Web App for Playing Board Games</h2>
       <p>You can use this web app to play board games.</p>
-      <D6 number="2" />
+      <D6 numberOfDice="1" />
     </main>
   )
 }
