@@ -3,5 +3,8 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "The Well Played Game",
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-material-ui',
+    'gatsby-plugin-react-helmet',
+  ],
 };

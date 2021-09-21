@@ -1,19 +1,23 @@
-// Step 1: Import React
 import * as React from 'react'
-import Dice from '../components/Dice.js'
+import Layout from '../components/Layout'
+import Typography from '@mui/material/Typography'
 
-// Step 2: Define your component
+
+
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1>The Game Well Played</h1>
-      <h2>Web App for Playing Board Games</h2>
-      <p>You can use this web app to play board games.</p>
-      <Dice diceCount="2" diceSidesCount="100" />
-    </main>
+    <Layout pageTitle="The Well Played Game">
+      <Typography variant="subtitle1" component="div" gutterBottom>
+      This is a web app for playing board games.
+      </Typography>
+      <Typography variant="h2" component="div" gutterBottom>
+      About this app
+      </Typography>
+      <Typography variant="body1" component="div" gutterBottom>
+				Hello! My name is Jacob Stephens, and I created this progressive web app to make more board and card games available to play digitally. The app is named after Bernard De Koven's book of the same name. <a target="_blank" rel="noreferrer" href="https://mitpress.mit.edu/books/well-played-game"><i>The Well Played Game</i></a> has shaped my play philosophy. The ideas got me to stop bargaining with others for play time. Authentic play requires total volition.
+			</Typography>
+    </Layout>
   )
 }
 
-// Step 3: Export your component
 export default IndexPage
