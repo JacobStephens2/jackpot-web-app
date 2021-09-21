@@ -42,7 +42,7 @@ const NavBar = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}><Link to="/dice-game">Dice Game</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/jackpot">Jackpot</Link></MenuItem>
       </Menu>
     </div>
   );
