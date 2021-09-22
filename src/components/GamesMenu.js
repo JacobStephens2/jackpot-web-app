@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
-import GamesMenu from './GamesMenu'
-
 
 
 const NavBar = () => {
@@ -18,27 +16,19 @@ const NavBar = () => {
   };
 
   return (
-    <div>
-      <Link to="/">
-        <Button>
-          The Well Played Game
-        </Button>
-      </Link>
-
-      <GamesMenu />
-
+    <span>
       <Button
-        id="component-button"
-        aria-controls="component-menu"
+        id="games-button"
+        aria-controls="games-menu"
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-      Components
+      Games
       </Button>
       
       <Menu
-        id="component-menu"
+        id="games-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
@@ -46,9 +36,11 @@ const NavBar = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}><Link to="/dice">Dice</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/jackpot">Jackpot</Link></MenuItem>
       </Menu>
-    </div>
+
+
+    </span>
   );
 }
 

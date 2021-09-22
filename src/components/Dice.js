@@ -46,7 +46,7 @@ class Dice extends React.Component {
 			total += this.state.rollHistoryArray[i];
 		}
 		this.setState({
-			rollAverage: (total / this.state.rollHistoryArray.length).toFixed(1)
+			rollAverage: (total / this.state.rollHistoryArray.length).toFixed(2)
 		})
 	}
 
@@ -75,7 +75,7 @@ class Dice extends React.Component {
 			<br />
 			
 			{/* Test states button */}
-			<Button 
+			{/* <Button 
 				variant="contained"
 				onClick={() => {
 					console.log(
@@ -102,7 +102,7 @@ class Dice extends React.Component {
 				}}
 			>
 				Log states
-			</Button>
+			</Button> */}
 		</div>
 	  );
 	}
