@@ -8,4 +8,12 @@ This app currently lives at [thewellplayedgame.gatsbyjs.io](https://thewellplaye
 Jacob licensed this app under the [GNU General Public License v3](https://www.gnu.org/licenses/quick-guide-gplv3.html) (GPLv3). 
 
 ## Attributions
-Jacob started this app from the [Gatsby minimal starter](https://www.gatsbyjs.com/plugins/gatsby-starter-plugin/?=minimal%20starter).
+Jacob started this app from the .
+
+This app uses the following:
+- [Gatsby](https://www.gatsbyjs.com/), and this app was started with the [Gatsby minimal starter](https://www.gatsbyjs.com/plugins/gatsby-starter-plugin/?=minimal%20starter) 
+- [React](https://reactjs.org/)
+- [Material UI](https://mui.com/company/about/), which implements [Material Design](https://material.io/design)
+- [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+- [Cascading Style Sheets](https://www.w3.org/TR/CSS/#css)
+- [HyperText Markup Language](https://html.spec.whatwg.org/)
