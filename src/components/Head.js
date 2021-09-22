@@ -16,8 +16,8 @@ const Head = ({pageTitle}) => {
 				name="viewport"
 				content="initial-scale=1"
 				width="device-width"
-				description="A progressive web app for playing board games"
 			/>
+			<meta name="description" content="A progressive web app for playing board games" />
 		</Helmet>
 	)
 }	
