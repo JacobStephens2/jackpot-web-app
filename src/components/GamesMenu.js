@@ -19,8 +19,6 @@ const NavBar = () => {
     <span>
       <Button
         id="games-button"
-        aria-controls="games-menu"
-        aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >

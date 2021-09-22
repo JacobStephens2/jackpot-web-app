@@ -29,8 +29,6 @@ const NavBar = () => {
 
       <Button
         id="component-button"
-        aria-controls="component-menu"
-        aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >

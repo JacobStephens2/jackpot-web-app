@@ -21,10 +21,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-         workboxConfig: {
-            globPatterns: ['**/icon-path*']
-         }
+        workboxConfig: {
+          globPatterns: ['**/icon-path*']
+        },
+        icon_options: {
+          purpose: `any maskable`,
+        },
       }
-   }
+    }
   ],
 };
