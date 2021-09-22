@@ -16,18 +16,11 @@ module.exports = {
         theme_color: `#4caf50`,
         display: `standalone`,
         icon: `src/images/icon.png`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        workboxConfig: {
-          globPatterns: ['**/icon-path*']
-        },
         icon_options: {
           purpose: `any maskable`,
         },
-      }
-    }
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 };

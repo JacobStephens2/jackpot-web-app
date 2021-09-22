@@ -9,7 +9,7 @@ Jacob licensed this app under the [GNU General Public License v3](https://www.gn
 
 ## Attributions
 This app uses the following:
-- [Gatsby](https://www.gatsbyjs.com/), and this app was started with the [Gatsby minimal starter](https://www.gatsbyjs.com/plugins/gatsby-starter-plugin/?=minimal%20starter) 
+- [Gatsby](https://www.gatsbyjs.com/). This app was started with the [Gatsby minimal starter](https://www.gatsbyjs.com/plugins/gatsby-starter-plugin/?=minimal%20starter), and this app is hosted on [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
 - [React](https://reactjs.org/)
 - [Material UI](https://mui.com/company/about/), which implements [Material Design](https://material.io/design)
 - [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
