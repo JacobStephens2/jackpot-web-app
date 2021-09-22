@@ -10,6 +10,7 @@ import '../style.css'
 const Head = ({pageTitle}) => {
 	return (
 		<Helmet>
+			<html lang="en" amp />
 			<title>{pageTitle}</title>
 			<meta 
 				name="viewport"
