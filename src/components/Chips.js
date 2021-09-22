@@ -40,25 +40,25 @@ class Chips extends React.Component {
 			<Button 
 				variant="contained"
 				onClick={() => {
-					this.potToPlayer(1);
-					console.log('chipCount: ' + typeof this.state.chipCount)
-					console.log('potCount: ' + typeof this.state.potCount)
-
-				}}
-			>
-				Move chip to player
-			</Button>
-			<br />
-			<Button 
-				variant="contained"
-				onClick={() => {
 					this.playerToPot(1);
 					console.log('chipCount: ' + typeof this.state.chipCount)
 					console.log('potCount: ' + typeof this.state.potCount)
 
 				}}
 			>
-				Move chip to pot
+				Chip to pot
+			</Button>
+				&ensp;
+			<Button 
+				variant="contained"
+				onClick={() => {
+					this.potToPlayer(1);
+					console.log('chipCount: ' + typeof this.state.chipCount)
+					console.log('potCount: ' + typeof this.state.potCount)
+
+				}}
+			>
+				Chip to player
 			</Button>
 
 		</div>
