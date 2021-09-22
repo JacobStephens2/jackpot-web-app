@@ -12,6 +12,7 @@ class Dice extends React.Component {
 			rollAverage: ''
 	  }
 	  this.rollDice = this.rollDice.bind(this);
+	  this.findAverage = this.findAverage.bind(this);
 	}
 
 	rollDice() {
@@ -73,39 +74,15 @@ class Dice extends React.Component {
 				Roll {this.props.diceCount}D{this.props.diceSidesCount}
 			</Button>
 			<br />
-			
-			{/* Test states button */}
-			{/* <Button 
-				variant="contained"
-				onClick={() => {
-					console.log(
-						"rollResult: " + this.state.rollResult + 
-						': ' + typeof this.state.rollResult + 
-						': Array? ' + Array.isArray(this.state.rollResult)
-					);
-					console.log(
-						"rollHistoryArray: " + this.state.rollHistoryArray + 
-						': ' + typeof this.state.rollHistoryArray +
-						': Array? ' + Array.isArray(this.state.rollHistoryArray) +
-						': ArrayLength? ' + this.state.rollHistoryArray.length
-					);
-					console.log(
-						"rollHistoryString: " + this.state.rollHistoryString + 
-						': ' + typeof this.state.rollHistoryString +
-						': Array? ' + Array.isArray(this.state.rollHistoryString)
-					);
-					console.log(
-						"rollAverage: " + this.state.rollAverage + 
-						': ' + typeof this.state.rollAverage +
-						': Array? ' + Array.isArray(this.state.rollAverage)
-					);
-				}}
-			>
-				Log states
-			</Button> */}
 		</div>
 	  );
 	}
-  };
+};
+
+Dice.defaultProps = {
+	diceCount: 1,
+	diceSidesCount: 6
+}
+
 
 export default Dice

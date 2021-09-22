@@ -7,7 +7,7 @@ const Jackpot = () => {
 	return (
 		<Layout pageTitle="Dice">
 			<Typography variant="body1" component="div" gutterBottom>
-				Roll the dice to see the results.
+				Roll the dice to see the&nbsp;results.
 				<Dice diceCount="2" diceSidesCount="6" />
 			</Typography>
 		</Layout>

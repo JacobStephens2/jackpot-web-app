@@ -13,10 +13,17 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         contained: {
-          margin: '1rem 0',
+          margin: '0 0 0.7rem',
         },
       },
     },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          margin: '0 0 0.5rem'
+        }
+      }
+    }
   },
   palette: {
     primary: {
