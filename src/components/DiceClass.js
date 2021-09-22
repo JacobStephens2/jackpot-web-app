@@ -1,12 +1,14 @@
 import * as React from 'react'
 import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography'
 
 class DiceClass extends React.Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
-		rollResult : 0,
-		rollResultHistory: ['apple', 'banana']
+			rollResult : '',
+			rollHistory: [],
+			rollHistoryString: ''
 	  }
 	  this.rollDice = this.rollDice.bind(this);
 	}
@@ -21,29 +23,58 @@ class DiceClass extends React.Component {
 		this.setState({
 			rollResult: result
 		})
+		this.setState({
+			rollHistory: this.state.rollHistory.concat(result)
+		})
+		if (this.state.rollHistoryString === '') {
+			this.setState({
+				rollHistoryString: result
+			})
+		} else {
+			this.setState({
+				rollHistoryString: this.state.rollHistoryString + ', ' + result
+			})
+		}
 	}
-
 
 	render() {
 	  return (
 		<div>
-			{this.props.diceCount}D{this.props.diceSidesCount} roll result: {this.state.rollResult}
-			<br />
 			<Button 
 				variant="contained"
 				onClick={() => {
 					this.rollDice();
 				}}
 			>
-				Roll Dice
+				Roll {this.props.diceCount}D{this.props.diceSidesCount}
 			</Button>
-			<br />
-			<br />
+			<Typography variant="body1">
+				Roll result: {this.state.rollResult}
+			</Typography>
+			<Typography variant="body1">
+				Roll history: {this.state.rollHistoryString}
+			</Typography>
+			
+			{/* Test states button */}
 			<Button 
 				variant="contained"
 				onClick={() => {
-					console.log("rollResult: " + this.state.rollResult + ': ' + typeof this.state.rollResult + ': Array? ' + Array.isArray(this.state.rollResult));
-					console.log("rollResultHistory: " + this.state.rollResultHistory + ': Array? ' + Array.isArray(this.state.rollResultHistory));
+					console.log(
+						"rollResult: " + this.state.rollResult + 
+						': ' + typeof this.state.rollResult + 
+						': Array? ' + Array.isArray(this.state.rollResult)
+					);
+					console.log(
+						"rollHistory: " + this.state.rollHistory + 
+						': ' + typeof this.state.rollHistory +
+						': Array? ' + Array.isArray(this.state.rollHistory) +
+						': ArrayLength? ' + this.state.rollHistory.length
+					);
+					console.log(
+						"rollHistoryString: " + this.state.rollHistoryString + 
+						': ' + typeof this.state.rollHistoryString +
+						': Array? ' + Array.isArray(this.state.rollHistoryString)
+					);
 				}}
 			>
 				Log states
