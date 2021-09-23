@@ -51,6 +51,14 @@ class Dice extends React.Component {
 		})
 	}
 
+	clearResults() {
+		this.setState({
+			rollResult : '',
+			rollHistoryArray: [],
+			rollHistoryString: '',
+			rollAverage: ''
+		})
+	}
 
 	render() {
 	  return (
@@ -73,6 +81,18 @@ class Dice extends React.Component {
 			>
 				Roll {this.props.diceCount}D{this.props.diceSidesCount}
 			</Button>
+
+			&ensp;
+
+			<Button 
+				variant="contained"
+				onClick={() => {
+					this.clearResults();
+				}}
+			>
+				Clear
+			</Button>
+
 			<br />
 		</div>
 	  );

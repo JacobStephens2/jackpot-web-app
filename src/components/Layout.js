@@ -13,7 +13,8 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         contained: {
-          marginBottom: '0.7rem',
+          marginTop: '0.5rem',
+          marginBottom: '0.5rem',
         },
       },
     },
@@ -25,13 +26,13 @@ const theme = createTheme({
         },
       },
     },
-    MuiTypography: {
+    MuiAccordion: {
       styleOverrides: {
         root: {
           marginBottom: '0.5rem'
-        }
-      }
-    }
+        },
+      },
+    },
   },
   palette: {
     primary: {

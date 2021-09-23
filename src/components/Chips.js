@@ -8,24 +8,24 @@ class Chips extends React.Component {
 	  super(props);
 	  this.state = {
 			chipCount : props.chipCount,
-			potCount: props.potCount
 	  }
-		this.addChipsToPlayerFromPot = this.potToPlayer.bind(this);
+		this.addChip = this.addChip.bind(this);
+		this.removeChip = this.removeChip.bind(this);
 	}
 
-	potToPlayer(change) {
+	addChip() {
 		this.setState({
-			chipCount: this.state.chipCount - change + change + change,
-			potCount: this.state.potCount - change
+			chipCount: this.state.chipCount + 1,
 		})
-		console.log(typeof this.state.chipCount)
 	}
-	playerToPot(change) {
-		this.setState({
-			chipCount: this.state.chipCount - change,
-			potCount: this.state.potCount - change + change + change
-		})
-		console.log(typeof this.state.chipCount)
+	removeChip() {
+		if(this.state.chipCount === 0) {
+			return;
+		} else {
+			this.setState({
+				chipCount: this.state.chipCount - 1,
+			})
+		}
 	}
 
 	render() {
@@ -38,25 +38,21 @@ class Chips extends React.Component {
 			<Button 
 				variant="contained"
 				onClick={() => {
-					this.playerToPot(1);
-					console.log('chipCount: ' + typeof this.state.chipCount)
-					console.log('potCount: ' + typeof this.state.potCount)
-
+					this.addChip();
 				}}
 			>
-				Chip to pot
+				Add chip
 			</Button>
+
 				&ensp;
+
 			<Button 
 				variant="contained"
 				onClick={() => {
-					this.potToPlayer(1);
-					console.log('chipCount: ' + typeof this.state.chipCount)
-					console.log('potCount: ' + typeof this.state.potCount)
-
+					this.removeChip();
 				}}
 			>
-				Chip to player
+				Remove chip
 			</Button>
 
 		</div>
