@@ -1,9 +1,8 @@
-
 import * as React from 'react'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button';
 
-class Chips extends React.Component {
+class ChipsAndPot extends React.Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
@@ -33,6 +32,9 @@ class Chips extends React.Component {
 		<div>
 			<Typography variant="body1">
 				Player chip count: {this.state.chipCount}
+			</Typography>
+			<Typography variant="body1">
+				Pot chip count: {this.state.potCount}
 			</Typography>
 
 			<Button 
@@ -64,10 +66,10 @@ class Chips extends React.Component {
 	}
 };
 
-Chips.defaultProps = {
+ChipsAndPot.defaultProps = {
 	chipCount: 10,
 	potCount: 0
 }
 
 
-export default Chips
+export default ChipsAndPot

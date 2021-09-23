@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Game Well Played Web App`,
-        short_name: `The Game Well Played`,
+        name: `The Well Played Game Web App`,
+        short_name: `The Well Played Game`,
         start_url: `/`,
         background_color: `#9c27b0`,
         theme_color: `#4caf50`,

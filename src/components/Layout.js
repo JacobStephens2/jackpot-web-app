@@ -13,14 +13,22 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         contained: {
-          margin: '0 0 0.7rem',
+          marginBottom: '0.7rem',
+        },
+      },
+    },
+    MuiTableContainer: {
+      styleOverrides: {
+        root: {
+          marginTop: '1rem',
+          marginBottom: '1rem'
         },
       },
     },
     MuiTypography: {
       styleOverrides: {
         root: {
-          margin: '0 0 0.5rem'
+          marginBottom: '0.5rem'
         }
       }
     }
