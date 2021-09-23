@@ -73,7 +73,7 @@ class Dice extends React.Component {
 	  return (
 		<Box sx={{ flexGrow: 1, marginBottom: '0.5rem', marginTop: '0.7rem' }}>
       <Grid container spacing={2}>
-				<Grid item xs={2}>
+				<Grid item xs={3}>
 						<Button 
 							variant="contained"
 							onClick={() => {
@@ -83,7 +83,7 @@ class Dice extends React.Component {
 							Roll {this.props.diceCount}D{this.props.diceSidesCount}
 						</Button>
 				</Grid>
-				<Grid item xs={2}>
+				<Grid item xs={3}>
 						<Button 
 							variant="contained"
 							onClick={() => {
@@ -93,7 +93,7 @@ class Dice extends React.Component {
 							Clear
 						</Button>
 				</Grid>
-				<Grid item xs={8}>
+				<Grid item xs={6}>
 						<Typography variant="body1">
 							Roll result: {this.state.rollResult}
 						</Typography>

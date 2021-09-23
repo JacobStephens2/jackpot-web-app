@@ -2,6 +2,8 @@
 import * as React from 'react'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 class Chips extends React.Component {
 	constructor(props) {
@@ -41,7 +43,7 @@ class Chips extends React.Component {
 					this.addChip();
 				}}
 			>
-				Add
+				<AddIcon />
 			</Button>
 
 				&ensp;
@@ -52,7 +54,7 @@ class Chips extends React.Component {
 					this.removeChip();
 				}}
 			>
-				Remove
+				<RemoveIcon />
 			</Button>
 
 		</span>

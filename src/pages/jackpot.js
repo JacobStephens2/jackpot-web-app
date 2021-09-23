@@ -24,7 +24,7 @@ const Jackpot = () => {
 			/>
 			<Dice diceCount="2"/>
 			<Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
         <Grid item xs={3}>
           <Item>
 						<Chips player={1} chipCount={15}/>
