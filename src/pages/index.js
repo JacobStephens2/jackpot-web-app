@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="The Well Played Game">
+    <Layout pageTitle="The Game Well Played">
       <Typography variant="subtitle1" component="div" gutterBottom>
       This is a web app for playing board games.
       </Typography>
