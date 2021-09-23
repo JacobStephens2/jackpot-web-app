@@ -30,9 +30,9 @@ class Chips extends React.Component {
 
 	render() {
 	  return (
-		<div>
+		<span>
 			<Typography variant="body1">
-				Player chip count: {this.state.chipCount}
+				Player {this.props.player} chips: {this.state.chipCount}
 			</Typography>
 
 			<Button 
@@ -41,7 +41,7 @@ class Chips extends React.Component {
 					this.addChip();
 				}}
 			>
-				Add chip
+				Add
 			</Button>
 
 				&ensp;
@@ -52,10 +52,10 @@ class Chips extends React.Component {
 					this.removeChip();
 				}}
 			>
-				Remove chip
+				Remove
 			</Button>
 
-		</div>
+		</span>
 	  );
 	}
 };
