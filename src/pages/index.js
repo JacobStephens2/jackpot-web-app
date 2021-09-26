@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Layout from '../components/Layout'
 import Typography from '@mui/material/Typography'
+import connect from 'react-redux'
+import {toggleDarkMode} from '../state/app'
 
-
-
-const IndexPage = () => {
+const IndexPage = ({isDarkMode, dispatch}) => {
   return (
     <Layout pageTitle="The Well Played Game">
       <Typography variant="subtitle1" component="div" gutterBottom>
@@ -16,8 +16,14 @@ const IndexPage = () => {
       <Typography variant="body1" component="div" gutterBottom>
 				Hello! My name is Jacob Stephens, and I created this progressive web app to make more board and card games available to play digitally. The app is named after Bernard De Koven's book of the same name. <a target="_blank" rel="noreferrer" href="https://mitpress.mit.edu/books/well-played-game"><i>The Well Played Game</i></a> has shaped my play philosophy. The ideas got me to stop bargaining with others for play time. Authentic play requires total volition.
 			</Typography>
+      <button
+        style={isDarkMode ? { background: 'black', color: 'white' } : null }
+        onClick={() => dispatch(toggleDarkMode(!isDarkMode))}>Dark Mode {isDarkMode ? 'on' : 'off'}
+      </button>
     </Layout>
   )
 }
 
-export default IndexPage
+export default connect(state => ({
+  isDarkMode: state.app.isDarkMode
+}), null)(IndexPage)
