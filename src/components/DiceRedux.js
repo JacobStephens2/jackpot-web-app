@@ -13,19 +13,6 @@ class Dice extends React.Component {
 	  this.rollDice = this.rollDice.bind(this);
 	}
 
-	rollDice() {
-		var result = (Math.floor(Math.random() * (this.props.diceSidesCount - 1 + 1)) + 1);
-		var i = 1;
-		while (i < this.props.diceCount) {
-			result = result + (Math.floor(Math.random() * (this.props.diceSidesCount - 1 + 1)) + 1);
-			i++;
-		}
-		this.setState({
-			rollResult: result
-		})
-		this.props.handleRoll(result);
-	}
-
 	render() {
 	  return (
 		<Box sx={{ flexGrow: 1, marginBottom: '0.5rem', marginTop: '0.7rem' }}>
