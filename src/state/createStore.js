@@ -6,9 +6,10 @@ const reducer = (state, action) => {
       return Object.assign({}, state, {
         count: state.count + 1,
       });
-    case 'ROLLDICE':
-      return Object.assign({}, state, {
-        roll: (Math.floor(Math.random() * (6 - 1 + 1)) + 1),
+      case 'ROLLDICE':
+        return Object.assign({}, state, {
+          roll: (Math.floor(Math.random() * (6 - 1 + 1)) + 1),
+          count: state.count + 1,
       });
     default:
       return state;

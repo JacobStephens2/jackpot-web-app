@@ -2,10 +2,11 @@ import * as React from 'react'
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
 
-const Roller = ({ roll, rolldice }) => (
+const Roller = ({ roll, count, rolldice }) => (
   <div>
     <p>Roll: {roll}</p>
-    <button onClick={rolldice}>Roll Dice</button>
+    <p>Rolls: {count}</p>
+    <button onClick={rolldice}>Roll 1D6</button>
   </div>
 )
 
