@@ -16,6 +16,8 @@ class Dice extends React.Component {
 	  }
 	  this.rollDice = this.rollDice.bind(this);
 	  this.findAverage = this.findAverage.bind(this);
+	  this.findTurn = this.findTurn.bind(this);
+	  this.clearResults = this.clearResults.bind(this);
 	}
 
 	rollDice() {
@@ -43,6 +45,7 @@ class Dice extends React.Component {
 				rollHistoryString: this.state.rollHistoryString + ', ' + result
 			})
 		}
+		this.props.handleRoll(result);
 	}
 
 	findAverage() {
@@ -56,7 +59,9 @@ class Dice extends React.Component {
 	}
 
 	findTurn() {
-			this.state.turn = this.state.rollHistoryArray.length - ((Math.ceil(this.state.rollHistoryArray.length / 4) * 4) - 4);
+		this.setState({
+			turn: this.state.rollHistoryArray.length - ((Math.ceil(this.state.rollHistoryArray.length / 4) * 4) - 4),
+		})
 	}
 
 	clearResults() {

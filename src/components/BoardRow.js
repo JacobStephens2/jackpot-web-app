@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { render } from 'react-dom'
 import Button from '@mui/material/Button';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
@@ -12,7 +11,9 @@ class BoardRow extends React.Component {
 		}
 		this.addChip = this.addChip.bind(this);
 		this.removeChip = this.removeChip.bind(this);
+		this.handleRoll = this.handleRoll.bind(this);
 	}
+
 
 	addChip() {
 		if(this.state.space === this.props.max) {
@@ -32,14 +33,21 @@ class BoardRow extends React.Component {
 		}
 	}
 
+	handleRoll() {
+		if (this.props.roll === this.props.name) {
+			this.addChip();
+		}
+	}
 
 	render() {
+	
 		return (
 			<TableRow>
 				<TableCell>{this.props.name}</TableCell>
 				<TableCell>{this.state.space}
 					<Button onClick={() => { this.addChip()}}>Add</Button>
 					<Button onClick={() => { this.removeChip()}}>Remove</Button>
+					<Button onClick={() => { this.handleRoll()}}>Handle Roll</Button>
 				</TableCell>
 			</TableRow>
 		)

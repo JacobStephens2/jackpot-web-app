@@ -20,15 +20,15 @@ class JackpotBoard extends React.Component {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						<BoardRow name={3} max={3}/>
-						<BoardRow name={4} max={3}/>
-						<BoardRow name={5} max={3}/>
-						<BoardRow name={6} max={3}/>
-						<BoardRow name={7} max={3}/>
-						<BoardRow name={8} max={3}/>
-						<BoardRow name={9} max={3}/>
-						<BoardRow name={10} max={3}/>
-						<BoardRow name={11} max={3}/>
+						<BoardRow roll={this.props.roll} name={3} max={3}/>
+						<BoardRow roll={this.props.roll} name={4} max={3}/>
+						<BoardRow roll={this.props.roll} name={5} max={3}/>
+						<BoardRow roll={this.props.roll} name={6} max={3}/>
+						<BoardRow roll={this.props.roll} name={7} max={3}/>
+						<BoardRow roll={this.props.roll} name={8} max={3}/>
+						<BoardRow roll={this.props.roll} name={9} max={3}/>
+						<BoardRow roll={this.props.roll} name={10} max={3}/>
+						<BoardRow roll={this.props.roll} name={11} max={3}/>
 					</TableBody>
 				</Table>
 			</TableContainer>
