@@ -6,14 +6,19 @@ const reducer = (state, action) => {
       return Object.assign({}, state, {
         count: state.count + 1,
       });
+    case 'ROLLDICE':
+      return Object.assign({}, state, {
+        roll: (Math.floor(Math.random() * (6 - 1 + 1)) + 1),
+      });
     default:
       return state;
   }
 }
 
-
-
-const initialState = { count: 0 }
+const initialState = { 
+  count: 0,
+  roll: 1
+}
 
 const createStore = () => reduxCreateStore(reducer, initialState)
 export default createStore
