@@ -14,8 +14,12 @@ const NavBar = () => {
           The Well Played Game
         </Button>
       </Link>
-
       <GamesMenu />
+      <Link to="/redux">
+        <Button>
+          Redux
+        </Button>
+      </Link>
 
     </div>
   );
