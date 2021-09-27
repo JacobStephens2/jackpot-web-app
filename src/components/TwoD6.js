@@ -1,12 +1,13 @@
 import * as React from 'react'
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
+import Button from '@mui/material/Button';
 
 const Roller = ({ roll, count, rolldice }) => (
   <div>
-    <p>Roll: {roll}</p>
-    <p>Rolls: {count}</p>
-    <button onClick={rolldice}>Roll 1D6</button>
+    <p>Roll Result: {roll}</p>
+    <p>Roll Count: {count}</p>
+    <Button variant="contained" onClick={rolldice}>Roll 2D6</Button>
   </div>
 )
 
@@ -15,8 +16,8 @@ Roller.propTypes = {
   rolldice: PropTypes.func.isRequired,
 }
 
-const mapStateToProps = ({ roll }) => {
-  return { roll }
+const mapStateToProps = ({ roll, count }) => {
+  return { roll, count }
 }
 
 const mapDispatchToProps = dispatch => {
@@ -26,7 +27,7 @@ const mapDispatchToProps = dispatch => {
 const ConnectedRoller = connect(mapStateToProps, mapDispatchToProps)(Roller)
 
 
-class DiceRedux extends React.Component {
+class TwoD6 extends React.Component {
 	render() {
 	  return (
 			<div>
@@ -36,4 +37,4 @@ class DiceRedux extends React.Component {
 	}
 };
 
-export default DiceRedux
+export default TwoD6

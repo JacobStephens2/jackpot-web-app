@@ -2,7 +2,7 @@ import * as React from 'react'
 import Layout from '../components/Layout'
 import Typography from '@mui/material/Typography'
 
-const IndexPage = ({isDarkMode, dispatch}) => {
+const IndexPage = () => {
   return (
     <Layout pageTitle="The Well Played Game">
       <Typography variant="subtitle1" component="div" gutterBottom>
