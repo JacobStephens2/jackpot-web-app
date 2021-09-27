@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import Button from '@mui/material/Button';
-import GamesMenu from './GamesMenu'
 
 
 
@@ -14,9 +13,11 @@ const NavBar = () => {
           The Well Played Game
         </Button>
       </Link>
-
-      <GamesMenu />
-
+      <Link to="/jackpot">
+        <Button>
+          Jackpot
+        </Button>
+      </Link>
     </div>
   );
 }

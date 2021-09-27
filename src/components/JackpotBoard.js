@@ -20,15 +20,19 @@ class JackpotBoard extends React.Component {
 						</TableRow>
 					</TableHead>
 					<TableBody>
-						<BoardRow roll={this.props.roll} name={3} max={3}/>
-						<BoardRow roll={this.props.roll} name={4} max={3}/>
-						<BoardRow roll={this.props.roll} name={5} max={3}/>
-						<BoardRow roll={this.props.roll} name={6} max={3}/>
-						<BoardRow roll={this.props.roll} name={7} max={3}/>
-						<BoardRow roll={this.props.roll} name={8} max={3}/>
-						<BoardRow roll={this.props.roll} name={9} max={3}/>
-						<BoardRow roll={this.props.roll} name={10} max={3}/>
-						<BoardRow roll={this.props.roll} name={11} max={3}/>
+						<BoardRow 
+							name={3} 
+							max={3} 
+							chips={this.props.space3}
+						/>
+						<BoardRow chips={this.props.space4} name={4} max={3}/>
+						<BoardRow chips={this.props.space5} name={5} max={3}/>
+						<BoardRow chips={this.props.space6} name={6} max={3}/>
+						<BoardRow chips={this.props.space7} name={7} max={3}/>
+						<BoardRow chips={this.props.space8} name={8} max={3}/>
+						<BoardRow chips={this.props.space9} name={9} max={3}/>
+						<BoardRow chips={this.props.space10} name={10} max={3}/>
+						<BoardRow chips={this.props.space11} name={11} max={3}/>
 					</TableBody>
 				</Table>
 			</TableContainer>
