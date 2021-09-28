@@ -698,6 +698,8 @@ class Jackpot extends React.Component {
               player4chips: this.state.player4chips + totalBoardChips
             })
             break;
+          default:
+            break;
         }
         break;
       default:
