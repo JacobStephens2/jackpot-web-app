@@ -31,10 +31,10 @@ class Jackpot extends React.Component {
       space9: 0,
       space10: 0,
       space11: 0,
-      player1stash: 15,
-      player2stash: 15,
-      player3stash: 15,
-      player4stash: 15,
+      player1chips: 15,
+      player2chips: 15,
+      player3chips: 15,
+      player4chips: 15,
       playerTurn: 1,
       previousPlayersTurn: 0
     }
@@ -59,29 +59,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
+              break;
+            default:
               break;
           }
         } else {
           this.setState({
             space3: this.state.space3 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;
+          }
         }
         break;
       case 4:
@@ -92,29 +118,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
             space4: this.state.space4 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;  
+          }
         }
         break;
       case 5:
@@ -125,29 +177,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
             space5: this.state.space5 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;
+          }
         }
         break;
       case 6:
@@ -158,29 +236,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
+              break;
+            default:
               break;
           }
         } else {
           this.setState({
             space6: this.state.space6 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;  
+          }
         }
         break;
       case 7:
@@ -191,29 +295,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
             space7: this.state.space7 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;  
+          }
         }
         break;
       case 8:
@@ -224,24 +354,26 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
@@ -257,29 +389,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
             space9: this.state.space9 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;  
+          }
         }
         break;
       case 10:
@@ -290,29 +448,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
             space10: this.state.space10 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;  
+          }
         }
         break;
       case 11:
@@ -323,29 +507,55 @@ class Jackpot extends React.Component {
           switch (this.state.playerTurn) {
             case 1:
               this.setState({
-                player1stash: this.state.player1stash + 3
+                player1chips: this.state.player1chips + 3
               });
               break;
             case 2:
               this.setState({
-                player2stash: this.state.player2stash + 3
+                player2chips: this.state.player2chips + 3
               });
               break;
             case 3:
               this.setState({
-                player3stash: this.state.player3stash + 3
+                player3chips: this.state.player3chips + 3
               });
               break;
             case 4:
               this.setState({
-                player4stash: this.state.player4stash + 3
+                player4chips: this.state.player4chips + 3
               });
               break;
+            default:
+              break;  
           }
         } else {
           this.setState({
             space11: this.state.space11 + 1
           })
+          switch (this.state.playerTurn) {
+            case 1:
+              this.setState({
+                player1chips: this.state.player1chips - 1
+              })
+              break;
+            case 2:
+              this.setState({
+                player2chips: this.state.player2chips - 1
+              })
+              break;
+            case 3:
+              this.setState({
+                player3chips: this.state.player3chips - 1
+              })
+              break;
+            case 4:
+              this.setState({
+                player4chips: this.state.player4chips - 1
+              })
+              break;
+            default:
+              break;  
+          }
         }
         break;
       default:
@@ -383,22 +593,22 @@ class Jackpot extends React.Component {
           <Grid container spacing={1}>
             <Grid item xs={3}>
               <Item>
-                <Chips player={1} chipCount={this.state.player1stash}/>
+                <Chips player={1} chipCount={this.state.player1chips}/>
               </Item>
             </Grid>
             <Grid item xs={3}>
               <Item>
-                <Chips player={2} chipCount={this.state.player2stash}/>
+                <Chips player={2} chipCount={this.state.player2chips}/>
             </Item>
             </Grid>
             <Grid item xs={3}>
               <Item>
-                <Chips player={3} chipCount={this.state.player3stash}/>
+                <Chips player={3} chipCount={this.state.player3chips}/>
               </Item>
             </Grid>
             <Grid item xs={3}>
               <Item>
-                <Chips player={4} chipCount={this.state.player4stash}/>
+                <Chips player={4} chipCount={this.state.player4chips}/>
               </Item>
             </Grid>
           </Grid>
