@@ -3,12 +3,7 @@ import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 
 class BoardSpace extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
-	
 		return (
 			<TableRow>
 				<TableCell>{this.props.name}</TableCell>

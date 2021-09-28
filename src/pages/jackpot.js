@@ -51,6 +51,87 @@ class Jackpot extends React.Component {
       roll: result
     });
     switch (result) {
+      case 2:
+        var spacesWithLessThan3 = 0;
+        if(this.state.space3 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space3: this.state.space3 + 1
+          })
+        }
+        if(this.state.space4 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space4: this.state.space4 + 1
+          })
+        }
+        if(this.state.space5 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space5: this.state.space5 + 1
+          })
+        }
+        if(this.state.space6 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space6: this.state.space6 + 1
+          })
+        }
+        if(this.state.space7 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space7: this.state.space7 + 1
+          })
+        }
+        if(this.state.space8 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space8: this.state.space8 + 1
+          })
+        }
+        if(this.state.space9 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space9: this.state.space9 + 1
+          })
+        }
+        if(this.state.space10 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space10: this.state.space10 + 1
+          })
+        }
+        if(this.state.space11 < 3) {
+          spacesWithLessThan3 = spacesWithLessThan3 + 1;
+          this.setState({
+            space11: this.state.space11 + 1
+          })
+        }
+        switch (this.state.playerTurn) {
+          case 1:
+            this.setState({
+              player1chips: this.state.player1chips - spacesWithLessThan3
+            })
+            break;
+          case 2:
+            this.setState({
+              player2chips: this.state.player2chips - spacesWithLessThan3
+            })
+            break;
+          case 3:
+            this.setState({
+              player3chips: this.state.player3chips - spacesWithLessThan3
+            })
+            break;
+          case 4:
+            this.setState({
+              player4chips: this.state.player4chips - spacesWithLessThan3
+            })
+            break;
+          default:
+            break;
+        }
+        break;
       case 3:
         if (this.state.space3 === 3) {
           this.setState({
@@ -556,6 +637,67 @@ class Jackpot extends React.Component {
             default:
               break;  
           }
+        }
+        break;
+      case 12:
+        var totalBoardChips = 0;
+        totalBoardChips = totalBoardChips + this.state.space3;
+        this.setState({
+          space3: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space4;
+        this.setState({
+          space4: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space5;
+        this.setState({
+          space5: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space6;
+        this.setState({
+          space6: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space7;
+        this.setState({
+          space7: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space8;
+        this.setState({
+          space8: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space9;
+        this.setState({
+          space9: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space10;
+        this.setState({
+          space10: 0
+        })
+        totalBoardChips = totalBoardChips + this.state.space11;
+        this.setState({
+          space11: 0
+        })
+        switch (this.state.playerTurn) {
+          case 1:
+            this.setState({
+              player1chips: this.state.player1chips + totalBoardChips
+            })
+            break;
+          case 2:
+            this.setState({
+              player2chips: this.state.player2chips + totalBoardChips
+            })
+            break;
+          case 3:
+            this.setState({
+              player3chips: this.state.player3chips + totalBoardChips
+            })
+            break;
+          case 4:
+            this.setState({
+              player4chips: this.state.player4chips + totalBoardChips
+            })
+            break;
         }
         break;
       default:
