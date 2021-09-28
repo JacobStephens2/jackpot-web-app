@@ -2,7 +2,7 @@ import * as React from 'react'
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 
-class BoardRow extends React.Component {
+class BoardSpace extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -19,4 +19,4 @@ class BoardRow extends React.Component {
 	}
 }
 
-export default BoardRow
+export default BoardSpace

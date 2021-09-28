@@ -14,7 +14,6 @@ const theme = createTheme({
       styleOverrides: {
         contained: {
           marginTop: '0.5rem',
-          marginBottom: '0.5rem',
         },
       },
     },
@@ -51,7 +50,7 @@ const Layout = ({ pageTitle, children }) => {
 			<Head pageTitle={pageTitle}/>
         <Container>
           <NavBar />
-          <Typography variant="h1" component="div" gutterBottom>
+          <Typography variant="h4" component="h1" gutterBottom>
             {pageTitle}
           </Typography>
           {children}
