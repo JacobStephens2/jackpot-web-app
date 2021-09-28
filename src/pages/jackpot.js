@@ -4,7 +4,7 @@ import Dice from '../components/Dice'
 import Chips from '../components/Chips'
 import PlayerTurn from '../components/PlayerTurn'
 import Rules from '../components/Rules'
-import JackpotBoard from '../components/JackpotBoard.js'
+import BoardJackpot from '../components/BoardJackpot.js'
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -613,7 +613,7 @@ class Jackpot extends React.Component {
             </Grid>
           </Grid>
         </Box>
-        <JackpotBoard 
+        <BoardJackpot 
           space3={this.state.space3}
           space4={this.state.space4}
           space5={this.state.space5}

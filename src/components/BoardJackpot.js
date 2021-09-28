@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import BoardSpace from './BoardSpace'
 
-class JackpotBoard extends React.Component {
+class BoardJackpot extends React.Component {
   render() {
 		return (
 			<TableContainer component={Paper}>
@@ -40,4 +40,4 @@ class JackpotBoard extends React.Component {
 	}
 }
 
-export default JackpotBoard
+export default BoardJackpot
