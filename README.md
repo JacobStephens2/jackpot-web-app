@@ -1,8 +1,6 @@
 # Jackpot Web App
 
-Hello! My name is Jacob Stephens, and I created this progressive web app to play the dice game, Jackpot.
-
-This app was live at [thewellplayedgame.gatsbyjs.io](https://thewellplayedgame.gatsbyjs.io) until the ending of Gatsby Cloud in September 2023.
+With this progressive web app, you can play the dice game, Jackpot.
 
 ## License
 Jacob licensed this app under the [GNU General Public License v3](https://www.gnu.org/licenses/quick-guide-gplv3.html) (GPLv3). 
